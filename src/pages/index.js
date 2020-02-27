@@ -16,7 +16,7 @@ const IndexPage = () => (
       return (
         <div style={{textAlign:'center', marginTop: '2em'}}>
           <a href={p.url} style={{display:'block', textDecoration: 'none', color:'inherit', textAlign:'center', fontWeight:'normal'}}>{p.text},</a>
-          <img src={`/project-images/${p.img}`} style={{width:p.width,margin:'30px 0 70px',boxSizing:'border-box'}}></img>
+          <img src={`project-images/${p.img}`} style={{width:p.width,margin:'30px 0 70px',boxSizing:'border-box'}}></img>
         </div>
       )
     }) }</div>
