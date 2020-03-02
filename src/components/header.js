@@ -10,12 +10,4 @@ const Header = () => (
   </header>
 )
 
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
-
 export default Header
