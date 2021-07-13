@@ -23,6 +23,9 @@
     "prettier": "^1.19.1",
     "typeface-work-sans": "0.0.72"
   },
+  "resolutions": {
+    "sharp": "0.24.0"
+  },
   "keywords": [
     "gatsby"
   ],
