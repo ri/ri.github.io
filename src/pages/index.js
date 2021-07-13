@@ -5,6 +5,16 @@ import SEO from "../components/seo"
 
 import Projects from "../data/projects.json"
 
+const MaybeA = ({href, children, ...props}) => {
+  if (!href) { return children }
+  return (
+    <a href={href} {...props}>
+      {children}
+    </a>
+  )
+}
+
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Portfolio" />
@@ -19,16 +29,17 @@ const IndexPage = () => (
         }
         return (
           <div key={i} style={{textAlign:'center', marginTop: '2rem'}}>
-            <a href={p.url} style={{display:'block', textDecoration: 'none', color:'inherit', textAlign:'center', fontWeight:'normal'}}>{text}</a>
-            {Array.isArray(p.img) ? (
-              p.img.map((img) => {
-                return (
-                  <img key={img.img} src={`project-images/${img.img}`} style={{display: 'block', width:img.width,margin:'30px 0 70px',boxSizing:'border-box'}}></img>
-                )})
-              ) : (
-                <img src={`project-images/${p.img}`} style={{width:p.width,margin:'30px 0 70px',boxSizing:'border-box'}}></img>
-              )}
-
+            <MaybeA href={p.url} style={{color:'inherit', textDecoration: 'none'}}>
+              <p style={{display:'block', textAlign:'center', fontWeight:'normal', margin: 0}}>{text}</p>
+              {Array.isArray(p.img) ? (
+                p.img.map((img) => {
+                  return (
+                    <img alt={img.name} key={img.img} src={`project-images/${img.img}`} style={{display: 'block', width:img.width,margin:'30px 0 70px',boxSizing:'border-box'}}></img>
+                  )})
+                ) : (
+                  <img alt={p.name} src={`project-images/${p.img}`} style={{width:p.width,margin:'30px 0 70px',boxSizing:'border-box'}}></img>
+                )}
+            </MaybeA>
           </div>
         )}
       )}
