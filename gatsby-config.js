@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Ri Liu`,
-    description: `Data visualisation`,
-    author: `Ri Liu`,
+    title: `Ri Liu, Australian Data Visualisation Specialist`,
+    description: `Portfolio website of Australian data visualisation specialist Ri Liu`,
+    author: `Ri Liu`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
