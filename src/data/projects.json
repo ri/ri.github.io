@@ -1,6 +1,6 @@
 {
   "projects": [
-  {"date":"2015/02", "id": "ctg", "name": "Close The Gap", "text": "gender inequalities around the world", "img": "ctg2.png", "url": "http://closethegap.studiometric.co", "width":640},
+  {"date":"2015/02", "id": "ctg", "name": "Close The Gap", "text": "gender inequalities around the world", "img": "ctg2.png", "url": "https://s3.ap-southeast-2.amazonaws.com/closethegap.studiometric.co/index.html", "width":640},
   {"date":"2017/04", "id": "newsmood", "name": "NewsMood", "text": "why the news was making me stressed", "img": "newsmood.gif", "url": "", "width":580},
   {"date":"2019/07", "id": "moonlanding", "name": "One small step", "text":"Neil Armstrong's heartbeat moments before the moon landing", "img": "moonlanding.gif", "url": "https://www.abc.net.au/news/2019-07-18/the-tension-of-nasas-apollo-11-moon-landing/11279636", "width":600 },
   {"date":"2015/04", "id": "ccl", "name": "Motion Data Paintings", "text":"motion capture data of dance movements", "img": [{"img": "ccl1.gif", "width":560, "name": "motion data painting 1"}, {"img":"ccl5.gif", "width": 365, "name": "motion data painting 2"}], "url": ""},
